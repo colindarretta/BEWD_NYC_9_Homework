@@ -13,11 +13,11 @@ first_guess = Integer(gets.chomp)
 
 
 if first_guess > secret_number
-  print "Too high."
+  puts "Too high."
 elsif first_guess < secret_number
-  print "Too low."
+  puts "Too low."
 else
-  print "Way to go, you got it."
+  puts "Way to go, you got it."
 end
 
 if first_guess != secret_number
@@ -26,11 +26,11 @@ if first_guess != secret_number
   second_guess = Integer(gets.chomp)
   
   if second_guess > secret_number
-    print "Too high."
+    puts "Too high."
   elsif second_guess < secret_number
-  	print "Too low."
+  	puts "Too low."
   else
-  	print "Got it on the second try."
+  	puts "Got it on the second try."
   end
  end
 
@@ -40,10 +40,10 @@ if first_guess != secret_number && second_guess != secret_number
    third_guess = Integer(gets.chomp)
     
    if third_guess > secret_number
-   print "Bummer. The secret number was #{secret_number}."
+   puts "Bummer. The secret number was #{secret_number}."
    elsif third_guess < secret_number
-   print "Bummer. The secret number was #{secret_number}."
+   puts "Bummer. The secret number was #{secret_number}."
    else
-   print "You got it!"
+   puts "You got it!"
    end
 end
